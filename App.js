@@ -2,10 +2,13 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import Footer from './components/Footer';
 
-const YourApp = () => {
+const App = () => {
   return (
-    <Footer />
+    <>
+      <Footer />
+    </>
+    
   );
 }
 
-export default YourApp;
+export default App;

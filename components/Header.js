@@ -1,16 +1,26 @@
 import React from "react";
-import {View, Text, TextInput, StyleSheet} from 'react-native';
+import { TextInput, StyleSheet, SafeAreaView} from 'react-native';
 
 const Header = () => {
     return(
-        <TextInput />
+        <SafeAreaView style={styles.container}>
+            <TextInput style={styles.input} />
+        </SafeAreaView>
     )
 };
 
-// const styles = StyleSheet.create({
-//     input: {
-        
-//     }
-// })
+const styles = StyleSheet.create({
+    container: {
+        top: 0,
+        left: 0,
+        right: 0,
+    },
+    input: {
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+        borderRadius: 50
+    },
+});
 
 export default Header;
