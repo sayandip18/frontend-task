@@ -1,5 +1,6 @@
 # frontend-task
 
+To run
 ```
 git clone git@github.com:sayandip18/frontend-task.git
 cd frontend-task
