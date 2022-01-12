@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, ActivityIndicator } from 'react-native';
-import { ListItem, SearchBar } from 'react-native-elements';
+import { View, Text, FlatList, ActivityIndicator, Button } from 'react-native';
+import { SearchBar } from 'react-native-elements';
 
 export default class Display extends Component {
   constructor(props) {
@@ -79,8 +79,14 @@ export default class Display extends Component {
       <View style={{ flex: 1 }}>
         <FlatList
           data={this.state.data}
-          renderItem={({ item }) => (
-            <Text>{item.SYMBOL}</Text>
+          renderItem={({ item }) => ( 
+              <Button
+                onPress={() => {
+                    alert('You tapped the button!');
+                }}
+                color={item.CLOSE >= item.OPEN? "green": "red"}
+                title={item.SYMBOL}
+            />
           )}
           keyExtractor={(x,i) => i}
           ListHeaderComponent={this.renderHeader}
