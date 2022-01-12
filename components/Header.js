@@ -1,3 +1,4 @@
+// Removed in favour of Display component
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, StyleSheet, SafeAreaView, FlatList} from 'react-native';
 
