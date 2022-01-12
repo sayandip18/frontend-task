@@ -1,11 +1,11 @@
-import React from "react";
-import { TextInput, StyleSheet, SafeAreaView} from 'react-native';
+import React, { useState, useEffect } from "react";
+import { View, Text, TextInput, StyleSheet, SafeAreaView, FlatList} from 'react-native';
 
 const Header = () => {
-    return(
-        <SafeAreaView style={styles.container}>
-            <TextInput style={styles.input} />
-        </SafeAreaView>
+    return(      
+      <SafeAreaView style={styles.container}>
+          <TextInput style={styles.input} />
+      </SafeAreaView>
     )
 };
 
