@@ -97,7 +97,15 @@ export default class Display extends Component {
                 >
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
-                    <Text style={styles.modalText}>Hello World!</Text>
+                    <Text style={styles.modalText}>
+                      Series: {item.SERIES} {"\n"}
+                      High: {item.HIGH} {"\n"}
+                      Low: {item.LOW} {"\n"}
+                      Open: {item.OPEN} {"\n"}
+                      Close: {item.CLOSE} {"\n"}
+                      TimeStamp: {item.TIMESTAMP} {"\n"}
+                      {/* Display other info similarly. But app crashes here. */}
+                    </Text>
                     <Pressable
                         style={[styles.button, styles.buttonClose]}
                         onPress={() => this.setModalVisible(!this.state.modalVisible)}
